@@ -1,0 +1,116 @@
+.exploreScreen {
+  .toolbar {
+    text-align: center;
+    position: relative;
+    padding: 24px 0;
+    font-weight: 600;
+
+    .search {
+      position: absolute;
+      top: 50%;
+      right: 32px;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+
+      color: white;
+      font-size: 1.4rem;
+    }
+  }
+
+  .tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 32px 32px;
+    background-color: #32363d;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 12px;
+
+    .tabItem {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      font-size: 0.9rem;
+      border-radius: 6px;
+
+      &.active {
+        background-color: #54a8e5;
+      }
+    }
+  }
+
+  .recommended,
+  .topMovie {
+    margin-bottom: 32px;
+    .title {
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      padding: 0 32px;
+
+      button.seeall {
+        background: none;
+        border: none;
+        font-size: 1rem;
+        color: #696d74;
+      }
+    }
+
+    .slide {
+      .item {
+        display: flex;
+        flex-direction: column;
+        border-radius: 6px;
+        overflow: hidden;
+
+        .image {
+          border-radius: 6px;
+          overflow: hidden;
+          height: 260px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .info {
+          p {
+            margin: 8px 0 4px;
+            font-size: 1rem;
+            font-weight: 500;
+          }
+
+          .star {
+            font-size: 1rem;
+
+            .icon {
+              color: #e0e0e0;
+              &.active {
+                color: #ffa235;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .recommended {
+    .slide {
+      .item {
+        .image {
+          height: 190px;
+        }
+      }
+    }
+  }
+}

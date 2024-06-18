@@ -1,0 +1,25 @@
+@import "../font/stylesheet.scss";
+
+html,
+body,
+:root {
+  padding: 0;
+  margin: 0;
+  font-family: "Fz Poppins", sans-serif !important;
+  font-size: 1rem;
+
+  --ion-background-color: #1b1e25;
+  --ion-text-color: #ffffff;
+}
+
+.contentPage {
+  --offset-bottom: auto !important;
+
+  --overflow: hidden;
+
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
